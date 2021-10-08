@@ -22,3 +22,8 @@ ER Diagramm 3
 Refaktorisiere das Diagramm:
 
 1. Eine Station hat kann eine oder mehrere Unterstationen haben
+
+
+Zusatz
+
+Wie würden die C# Klassen aussehen?
