@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms", "Algorithms\Al
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sql", "Sql\Sql.csproj", "{77E6A06D-CCCF-48AA-A96C-7BF6D656BF55}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Refactor", "Refactor\Refactor.csproj", "{B8A517D1-37F6-4889-AD2F-7257BDD92F4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{77E6A06D-CCCF-48AA-A96C-7BF6D656BF55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77E6A06D-CCCF-48AA-A96C-7BF6D656BF55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77E6A06D-CCCF-48AA-A96C-7BF6D656BF55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8A517D1-37F6-4889-AD2F-7257BDD92F4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8A517D1-37F6-4889-AD2F-7257BDD92F4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8A517D1-37F6-4889-AD2F-7257BDD92F4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8A517D1-37F6-4889-AD2F-7257BDD92F4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
