@@ -6,11 +6,12 @@ namespace Refactor
 {
     /*
       Gegeben ist dieser NewFileInspector. Wenn eine neue Datei in einem bestimmten Verzeichnis angelegt wird, soll er 
-      den User informieren. Dafür gibt es eine Liste von Verhalten "Behaviours". 
+      den User informieren. Dafür gibt es eine Menge von Verhalten die an oder ausgeschaltet werden können. 
       
       Die Benutzung ist so gedacht:
       
-      var ic = new NewFileInspector(new[]{InspectBehaviour.SendEMail, InspectBehaviour.CallWebservice}, "c:\temp")
+      var ic = new NewFileInspector("c:\temp")
+      ic.ShouldCallWebservice = true;
       ic.Start();
        
       Welche Probleme ergeben sich hinsichtlich, der Wiederverwandbarkeit, Wartung und Erweiterbarkeit?
@@ -19,20 +20,15 @@ namespace Refactor
     
     public class NewFileInspector
     {
-        public enum InspectBehaviour
-        {
-            SendEMail,
-            ShowMessageBox,
-            CallWebservice
-        }
-        
-        private readonly InspectBehaviour[] _behaviours;
-        private readonly string _listenToDirectory;
         private bool _looping;
+        private string _listenToDirectory;
 
-        public NewFileInspector(InspectBehaviour [] behaviours, string listenToDirectory)
+        public bool ShouldCallWebservice { get; set; }
+        public bool ShouldSendEmail { get; set; }
+        public bool ShouldShowMessageBox { get; set; }
+        
+        public NewFileInspector(string listenToDirectory)
         {
-            _behaviours = behaviours;
             _listenToDirectory = listenToDirectory;
         }
 
@@ -57,22 +53,22 @@ namespace Refactor
             _looping = false;
         }
 
+
         private void ExecuteBehaviour(string newFileName)
         {
-            foreach (var behaviour in _behaviours)
+            if (ShouldCallWebservice)
             {
-                switch (behaviour)
-                {
-                    case InspectBehaviour.CallWebservice:
-                        FancyWebClient.Request("http://newfileallert.com");
-                        break;
-                    case InspectBehaviour.SendEMail:
-                        FancyMailSender.SendMail("me@recom.eu", "New File " + newFileName + " detected!");
-                        break;
-                    case InspectBehaviour.ShowMessageBox:
-                        MessageBox.ShowMessage("New File " + newFileName + " detected!");
-                        break;
-                }
+                FancyWebClient.Request("http://newfileallert.com");
+            }
+
+            if (ShouldSendEmail)
+            {
+                FancyMailSender.SendMail("me@recom.eu", "New File " + newFileName + " detected!");
+            }
+
+            if (ShouldShowMessageBox)
+            {
+                MessageBox.ShowMessage("New File " + newFileName + " detected!");
             }
         }
     }
