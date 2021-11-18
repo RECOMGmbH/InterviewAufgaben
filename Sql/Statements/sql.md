@@ -12,11 +12,8 @@
 ## Tabelle: gr_protocoldata
 
 - Die Tabelle beinhaltet anamnestische Informationen in Form eines     JSON Dokumentes
-
 - Dokumente sind einer Art zugewiesen RtoTypeId (1 = Anamnese, ..., 42    = Biography, .. usw.)
-
 - ParentA und ParentB sind die Vorgängerdokumente
-  
 - Das Aktuelleste Dokument hat keine Nachfolger-Dokumente
 
 ![Tabelle: Aufnahme](./media/image2.png)
