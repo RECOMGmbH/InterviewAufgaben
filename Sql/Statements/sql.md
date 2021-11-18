@@ -6,7 +6,7 @@
 
 ![Tabelle: Patient](./media/image1.png)
 
-- **Aufgabe 1** - Schreiben Sie ein SQL für alle Patienten die „Schulz", „Schultz" oder „Schulze" heißen.
+- **Aufgabe 1** - Schreiben Sie ein SQL für alle Patienten die „Schulz", „Schultz" oder „Schulze" heißen zurückliefert.
 - **Aufgabe 2** - Schreiben Sie ein SQL das ausgibt zu welchem Geschlecht, es wieviele Patienten gibt.
 
 ## Tabelle: gr_protocoldata
