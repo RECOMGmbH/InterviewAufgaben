@@ -1,5 +1,5 @@
 
-# ER-Digramme
+# ER-Diagramme
 
 ## ER Diagramm - Patienten / Stationen / Zuordnungen
 
@@ -21,7 +21,7 @@ Refaktorisiere das Diagramm:
 
 Refaktorisiere das Diagramm:
 
-- Eine Station hat kann eine oder mehrere Unterstationen haben
+- Eine Station kann eine oder mehrere Unterstationen haben
 
 ## Zusatz
 
