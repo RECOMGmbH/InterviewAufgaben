@@ -6,7 +6,7 @@ Szenario:
 
 Ein Entwickler hat ein Feature dokumentiert und Sie sollen diese Dokumentation jetzt reviewen. Sie waren bisher nicht in die Entwicklung eingebunden und kennen das Feature  nicht.
 
-[Der Text des Entwicklers kann hier als .pdf heruntergeladen werden](AnwendungGDB.pdf)
+[Der Text des Entwicklers kann hier als .pdf heruntergeladen werden](https://github.com/RECOMGmbH/InterviewAufgaben/raw/main/TechnicalWriter/AnwendungGDB.pdf)
 
 Aufgaben & Fragen:
 
