@@ -14,7 +14,7 @@ namespace Refactor
       ic.ShouldCallWebservice = true;
       ic.Start();
        
-      Welche Probleme ergeben sich hinsichtlich, der Wiederverwandbarkeit, Wartung und Erweiterbarkeit?
+      Welche Probleme ergeben sich hinsichtlich der Wiederverwertbarkeit, Wartung und Erweiterbarkeit?
       Wie könnte ein Refactoring aussehen?
     */
     
