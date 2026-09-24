@@ -87,9 +87,14 @@ Sprache die du willst.)
      (a,b,c,...,y,z). No digits, special characters, uppercase, etc.
 
    @example
-   Find("abc") = 'a'            // all characters are non-repeating, 'a' is the first
-   Find("aaabccccdeeeef") = 'b' // b, d, f are non-repeating, 'b' is the first
-   Find("abcabcabc") = '_'      // all characters are repeating
+   ```typescript
+   // all characters are non-repeating, 'a' is the first
+   firstNonRepeatingCharacter("abc") == 'a'
+   // b, d, f are non-repeating, 'b' is the first
+   firstNonRepeatingCharacter("aaabccccdeeeef") == 'b'
+   // all characters are repeating
+   firstNonRepeatingCharacter("abcabcabc") == false
+   ```
    
    Tasks/Questions:
    - Implement the Algorithms
@@ -131,7 +136,7 @@ class NewFileInspector {
     this.#listenToDirectory = listenToDirectory;
   }
 
-  start(): void {
+  async start(): void {
     this.#looping = true;
 
     while (this.#looping) {
