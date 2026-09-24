@@ -87,14 +87,12 @@ Sprache die du willst.)
      (a,b,c,...,y,z). No digits, special characters, uppercase, etc.
 
    @example
-   ```typescript
    // all characters are non-repeating, 'a' is the first
    firstNonRepeatingCharacter("abc") == 'a'
    // b, d, f are non-repeating, 'b' is the first
    firstNonRepeatingCharacter("aaabccccdeeeef") == 'b'
    // all characters are repeating
    firstNonRepeatingCharacter("abcabcabc") == false
-   ```
    
    Tasks/Questions:
    - Implement the Algorithms
